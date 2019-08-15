@@ -24,4 +24,24 @@ function draw()
   {
     drawHex(mainLayout, hexes[i], '#BE73B2');
   }
+  //testFuncAll();
+}
+
+
+//function test holder. you can comment the ones you want to see in and vice versa.
+function testFuncAll()
+{
+  testIsEquals();
+  testHexArit();
+
+}
+function testIsEquals()
+{
+  var hexa = Hex(2,2,6);
+  var hexb = Hex(2,2,6);
+  console.assert(isEqualsHex(hexa, hexb), "fail. supposed to be true. ")
+}
+function testHexArit()
+{
+  //var hexa =
 }
