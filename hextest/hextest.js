@@ -1,4 +1,4 @@
-var radius = 0; //radius of hex grid
+var radius = 5; //radius of hex grid
 var size; //size of hexes
 var originPixel; //very center of the board
 var hexes = [];
