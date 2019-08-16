@@ -34,7 +34,7 @@ function testFuncAll()
   //testIsEquals();
   //testHexArit();
   //testHexOverlap();
-  //testDiag();
+  testDiag();
 
 }
 function testIsEquals()
@@ -55,5 +55,5 @@ function testDiag()
 {
   drawHex(mainLayout, originHex, '#19053A');
   var diag0 = getDiagonal(originHex, 0);
-  drawHex(mainLayout, Hex(0,-1,1), '#684F91');
+  drawHex(mainLayout, Hex(0,1,-1), '#684F91');
 }
