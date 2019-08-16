@@ -12,3 +12,4 @@
 - `hexArea` is complete and tested.
 - `hexOverlap` is complete and tested.
 - Fixed an issue where I forgot to swap the args of a use of `includesHex` in `inRadius`.
+- `push()` and `pop()` are now built into `drawHex()`. 
