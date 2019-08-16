@@ -6,7 +6,7 @@ var mainLayout;
 
 function setup()
 {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 1000);
   size = Point(50, 50);
   originPixel = Point(windowWidth/2, windowHeight/2)
   mainLayout = Layout(pointyOrient, size, originPixel)
@@ -19,11 +19,7 @@ function draw()
   stroke('#ED8FA5');
   background(50);
   fill(100);
-
-  for (var i = 0; i < hexes.length; i++)
-  {
-    drawHex(mainLayout, hexes[i], '#BE73B2');
-  }
+  drawHexesArray(mainLayout, hexes, '#BE73B2')
   testFuncAll();
   drawHex(mainLayout, originHex, 0);
   debugGrid(mainLayout, hexes)
@@ -35,23 +31,30 @@ function testFuncAll()
 {
   //testBasics();
   //testHexArit();
-  //testHexOverlap();
   //testDiag();
   //testRotate();
+  //testHexArea();
+  //testHexOverlap();
 
 }
-// TODO: ishex, hexToString
+
 function testBasics()
 {
+  //isHex
+  console.assert(isHex(Hex(0,0,0)),true, "fail of isHex on origin case");
+  console.assert(isHex(Hex(1,1,1)),false, "fail of isHex on q + r + s = 0. supposed to be false");
+  console.assert(isHex(Hex(1,-1,0)),true, "fail of isHex on q + r + s = 0. supposed to be true");
+  console.assert(isHex(Hex(25,25,-50)),true, "fail of isHex on q + r + s = 0. supposed to be true");
+  console.assert(isHex(Hex(-25,25,-50)),false, "fail of isHex on q + r + s = 0. supposed to be false");
 
   //is equals Hex
-  console.assert(isEqualsHex(Hex(3,-2,-1), Hex(3,-2,-1)), "fail. supposed to be true. ");
-  console.assert(isEqualsHex(Hex(0,0,0), Hex(0,0,0)), "fail. supposed to be true. ");
-  console.assert(!isEqualsHex(Hex(3,-2,-1), Hex(0,0,0)), "fail. supposed to be true.");
-  console.assert(isEqualsHex(Hex(0,1,-1), Hex(0,1,-1)), "fail. supposed to be true. ");
-  console.assert(isEqualsHex(Hex(50,-25,-25), Hex(50,-25,-25)), "fail. supposed to be true.");
-  console.assert(!isEqualsHex(Hex(-10,-2,12), Hex(3,-2,-1)), "fail. supposed to be true. ");
-  console.log("testIsEquals() complete");
+  console.assert(isEqualsHex(Hex(3,-2,-1), Hex(3,-2,-1)), "fail of isEqualsHex. supposed to be true. ");
+  console.assert(isEqualsHex(Hex(0,0,0), Hex(0,0,0)), "fail of isEqualsHex. supposed to be true. ");
+  console.assert(!isEqualsHex(Hex(3,-2,-1), Hex(0,0,0)), "fail of isEqualsHex. supposed to be true.");
+  console.assert(isEqualsHex(Hex(0,1,-1), Hex(0,1,-1)), "fail of isEqualsHex. supposed to be true. ");
+  console.assert(isEqualsHex(Hex(50,-25,-25), Hex(50,-25,-25)), "fail of isEqualsHex. supposed to be true.");
+  console.assert(!isEqualsHex(Hex(-10,-2,12), Hex(3,-2,-1)), "fail of isEqualsHex. supposed to be true. ");
+  console.log("testBasics() complete");
 }
 
 function testHexArit()
@@ -100,10 +103,6 @@ function testHexArit()
 
 }
 
-function testHexOverlap()
-{
-
-}
 function testDiag() //hexs are in a graident to show that it is clockwise
 {
   drawHex(mainLayout, originHex, '#19053A');
@@ -159,5 +158,23 @@ function testRotate()
   hexB = getRotate(hexA,5);
   console.assert(isEqualsHex(hexB,Hex(-3,4,-1)));
   drawHex(mainLayout, hexB, 'rgb(100,0,212)');
+
+}
+
+function testHexArea() //a visual test.
+{
+  var hex = Hex(2,-2,0);
+  var radius = 2;
+  var res = hexArea(hex,radius);
+  //drawHexesArray(mainLayout, hexArea(hex,radius),150);
+  for(var i = 0; i < res.length; i++)
+  {
+    drawHex(mainLayout, res[i], 'rgb(100,0,212)');
+  }
+  //drawHex(mainLayout, hex, 'rgb(100,0,212)');
+}
+
+function testHexOverlap()
+{
 
 }
