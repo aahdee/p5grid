@@ -1,4 +1,4 @@
-var radius = 1; //radius of hex grid
+var radius = 2; //radius of hex grid
 var size; //size of hexes
 var originHex; //very center of the board
 var hexes = [];
@@ -10,7 +10,7 @@ function setup()
   size = Point(50, 50);
   originPixel = Point(windowWidth/2, windowHeight/2)
   mainLayout = Layout(pointyOrient, size, originPixel)
-  generateBoard(radius, hexes, Hex(1,1,-2));
+  generateBoard(radius, hexes, Hex(0,-1,1));
   originHex = Hex(0,0,0);
 }
 
@@ -25,6 +25,7 @@ function draw()
     drawHex(mainLayout, hexes[i], '#BE73B2');
   }
   testFuncAll();
+  drawHex(mainLayout, originHex, 0);
 }
 
 
