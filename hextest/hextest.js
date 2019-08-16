@@ -1,4 +1,4 @@
-var radius = 7; //radius of hex grid
+var radius = 1; //radius of hex grid
 var size; //size of hexes
 var originHex; //very center of the board
 var hexes = [];
@@ -10,7 +10,7 @@ function setup()
   size = Point(50, 50);
   originPixel = Point(windowWidth/2, windowHeight/2)
   mainLayout = Layout(pointyOrient, size, originPixel)
-  generateBoard(radius, hexes);
+  generateBoard(radius, hexes, Hex(1,1,-2));
   originHex = Hex(0,0,0);
 }
 
@@ -35,7 +35,7 @@ function testFuncAll()
   //testHexArit();
   //testHexOverlap();
   //testDiag();
-  testRotate();
+  //testRotate();
 
 }
 function testIsEquals()
@@ -116,7 +116,7 @@ function testRotate()
   console.assert(isEqualsHex(hexB,Hex(2,-1,-1)));
   drawHex(mainLayout, hexA, 255);
   drawHex(mainLayout, hexB, 190);
-  
+
   hexA = Hex(-1,3,-2);
   hexB = getRotate(hexA);
   console.assert(isEqualsHex(hexB,Hex(2,1,-3)));
