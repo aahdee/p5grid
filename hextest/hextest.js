@@ -26,21 +26,25 @@ function draw()
   }
   testFuncAll();
   drawHex(mainLayout, originHex, 0);
+  debugGrid(mainLayout, hexes)
 }
 
 
 //function test holder. you can comment the ones you want to see in and vice versa.
 function testFuncAll()
 {
-  //testIsEquals();
+  //testBasics();
   //testHexArit();
   //testHexOverlap();
   //testDiag();
   //testRotate();
 
 }
-function testIsEquals()
+// TODO: ishex, hexToString
+function testBasics()
 {
+
+  //is equals Hex
   console.assert(isEqualsHex(Hex(3,-2,-1), Hex(3,-2,-1)), "fail. supposed to be true. ");
   console.assert(isEqualsHex(Hex(0,0,0), Hex(0,0,0)), "fail. supposed to be true. ");
   console.assert(!isEqualsHex(Hex(3,-2,-1), Hex(0,0,0)), "fail. supposed to be true.");
