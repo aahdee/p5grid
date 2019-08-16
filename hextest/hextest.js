@@ -22,7 +22,7 @@ function draw()
   drawHexesArray(mainLayout, hexes, '#BE73B2')
   testFuncAll();
   //drawHex(mainLayout, originHex, 0);
-  debugGrid(mainLayout, hexes)
+  //debugGrid(mainLayout, hexes)
 }
 
 
