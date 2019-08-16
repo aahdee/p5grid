@@ -1,4 +1,4 @@
-var radius = 2; //radius of hex grid
+var boardRadius = 5; //radius of hex grid
 var size; //size of hexes
 var originHex; //very center of the board
 var hexes = [];
@@ -7,10 +7,10 @@ var mainLayout;
 function setup()
 {
   createCanvas(windowWidth, 1000);
-  size = Point(50, 50);
+  size = Point(40, 40);
   originPixel = Point(windowWidth/2, windowHeight/2)
   mainLayout = Layout(pointyOrient, size, originPixel)
-  generateBoard(radius, hexes, Hex(0,-1,1));
+  generateBoard(boardRadius, hexes, Hex(0,0,0));
   originHex = Hex(0,0,0);
 }
 
@@ -21,7 +21,7 @@ function draw()
   fill(100);
   drawHexesArray(mainLayout, hexes, '#BE73B2')
   testFuncAll();
-  drawHex(mainLayout, originHex, 0);
+  //drawHex(mainLayout, originHex, 0);
   debugGrid(mainLayout, hexes)
 }
 
@@ -163,18 +163,25 @@ function testRotate()
 
 function testHexArea() //a visual test.
 {
-  var hex = Hex(2,-2,0);
+  var hex = Hex(0,-1,1);
   var radius = 2;
-  var res = hexArea(hex,radius);
-  //drawHexesArray(mainLayout, hexArea(hex,radius),150);
-  for(var i = 0; i < res.length; i++)
-  {
-    drawHex(mainLayout, res[i], 'rgb(100,0,212)');
-  }
-  //drawHex(mainLayout, hex, 'rgb(100,0,212)');
+  var res = hexArea(hex,radius,originHex,boardRadius);
+  drawHexesArray(mainLayout, res, 0);
 }
 
-function testHexOverlap()
+function testHexOverlap() //visual test
 {
+  var hexA = Hex(0,-3,3);
+  var hexB = Hex(2,1,-3);
+  var radA = 3;
+  var radB = 4;
+  res = hexArea(hexA,radA,originHex,boardRadius);
+  drawHexesArray(mainLayout, res, 0);
+  res = hexArea(hexB,radB,originHex,boardRadius);
+  drawHexesArray(mainLayout, res, 255);
+
+  var res = hexOverlap2(hexA, hexB, radA, radB, originHex, boardRadius);
+  drawHexesArray(mainLayout, res, 100);
+
 
 }
