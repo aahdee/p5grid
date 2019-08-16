@@ -6,9 +6,9 @@ var mainLayout;
 
 function setup()
 {
-  createCanvas(windowWidth, 1000);
+  createCanvas(windowWidth, windowHeight);
   size = Point(40, 40);
-  originPixel = Point(windowWidth/2, windowHeight/2)
+  originPixel = Point(0, 0);
   mainLayout = Layout(pointyOrient, size, originPixel)
   generateBoard(boardRadius, hexes, Hex(0,0,0));
   originHex = Hex(0,0,0);
@@ -19,8 +19,11 @@ function draw()
   stroke('#ED8FA5');
   background(50);
   fill(100);
+  push();
+  translate(width/2, height/2);
   drawHexesArray(mainLayout, hexes, '#BE73B2')
   testFuncAll();
+  pop();
   //drawHex(mainLayout, originHex, 0);
   //debugGrid(mainLayout, hexes)
 }

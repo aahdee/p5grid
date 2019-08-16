@@ -4,7 +4,7 @@ This is an work in progress reference for my implementation of grids in p5.js. B
 
 ## hexgrid.js
 ### Hex()
-**Syntax:**`Hex(q, r, s)`  
+**Syntax:**`Hex(q, s, r)`  
 This constructor creates a hexagon with the coordinates q, r, and s. 
 
 ## trigrid.js
