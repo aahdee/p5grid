@@ -25,8 +25,7 @@ function draw()
   testFuncAll();
   pop();
   //drawHex(mainLayout, originHex, 0);
-  //debugGrid(mainLayout, hexes)
-  ellipse(width/2, height/2,10,10);
+  //debugGrid(mainLayout, hexes);
 }
 
 
