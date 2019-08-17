@@ -18,7 +18,7 @@ There are two orientations for the grid: `pointyOrient` and `flatOrient`. `point
 ### Layout()
 **Syntax:** `Layout(orientation, size, originPixel)`  
 **Requires:** `size` should be a `Pixel` that has positive values. `originPixel` should be `Hex(0,0,0)`  
-This creates the an invisible grid where you can place you hexes on. `size` represents the radius (It's slightly larger than it should be, this is a fix in progress). 
+This creates the an invisible grid where you can place you hexes on. `size` represents the radius (It's slightly larger than it should be, this is a fix in progress).
 ### generateBoard()
 **Syntax:** `generateBoard(radius, hexes, offset = Hex(0,0,0))`  
 **Requires:** `0 <= radius && hexes = []`  
@@ -38,6 +38,7 @@ With these you can easily generate a grid in `setup()` and `draw()`. The example
 	function setup()
 	{
 	  createCanvas(windowWidth, windowHeight);
+		background(50);
 	  size = Point(10, 10);
 	  originPixel = Point(0, 0);
 	  mainLayout = Layout(pointyOrient, size, originPixel)
@@ -47,13 +48,11 @@ With these you can easily generate a grid in `setup()` and `draw()`. The example
 	function draw()
 	{
 	  stroke('#ED8FA5');
-	  background(50);
-	  fill(100);
+		background(50);
 	  push();
 	  translate(width/2, height/2);
 	  drawHexesArray(mainLayout, hexes, '#BE73B2')
 	  pop();
-	  ellipse(width/2, height/2,10,10);
 	}
 
 ## Basic Functions

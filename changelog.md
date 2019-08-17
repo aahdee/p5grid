@@ -17,3 +17,4 @@
 ## 8/17/2019
 - Accidentally left a dev version of `hexOverlap` in master. It is now changed.
 - Started reference of `hexgrid.js`.
+- Fixed assertion errors in `isEqualsHex`, `hexAdd`, `hexSub`, `hexMult`.
