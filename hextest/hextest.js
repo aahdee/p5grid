@@ -7,7 +7,7 @@ var mainLayout;
 function setup()
 {
   createCanvas(windowWidth, windowHeight);
-  size = Point(40, 40);
+  size = Point(10, 10);
   originPixel = Point(0, 0);
   mainLayout = Layout(pointyOrient, size, originPixel)
   generateBoard(boardRadius, hexes, Hex(0,0,0));
@@ -26,6 +26,7 @@ function draw()
   pop();
   //drawHex(mainLayout, originHex, 0);
   //debugGrid(mainLayout, hexes)
+  ellipse(width/2, height/2,10,10);
 }
 
 
