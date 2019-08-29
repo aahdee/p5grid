@@ -25,7 +25,7 @@ This creates the an invisible grid where you can place you hexes on. `size` repr
 As it implies, this function generates a board with a radius of `radius` and puts the result into the `hexes` array. The center of the board is at the origin hexagon, (0,0,0), by default but it can be changed by adding the optional parameter `offset`. Should be called in `setup()`
 ### drawHexes() and drawHexesArray()
 **Syntax:** `drawHexes(layout, hex, color)`, `drawHexesArray(layout, hexes, color)`  
-This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish. The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
+This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish and if you would like no fill, enter the string `"NOFILL"` The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
 
 With these you can easily generate a grid in `setup()` and `draw()`. The example used in `hexTest.js` is below.
 
@@ -102,7 +102,7 @@ Returns the Hex whose vertex shares an edge with a passed in Hex's vertex.
 Returns an array of Hexes that are a distance of radius away from the passed in Hex.
 
 ### getRotate()
-**Syntax:** `getRotate(Hex, rotateNum = 1)`  
+**Syntax:** `getRotate(Hex, rotateNum = 1, origin = Hex(0,0,0))`  
 **Requires:** `0 <= rotateNum && rotateNum < 6`
 Returns the clockwise rotation around the origin of the passed in Hex. The argument `rotateNum` is in multiples of 60 degrees.
 

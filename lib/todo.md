@@ -1,9 +1,14 @@
 # To-do
-- Implementation of transformation of the entire grid and scaling.
-- No fill when drawing Hexes such that there can be a wireframe grid.
-- Remove originPixel for the transition to `push()` and `pop()` feature
+- Implementation of transformation of the entire grid and scaling into a function.
+- Remove `originPixel` for the transition to `push()` and `pop()` feature
+  - The most likely plan will be that the client can define `originPixel` but the implementation draws the grid at (0,0) and translates to the specified pixel. Thus translations will be centered around the origin hexagon but it still sticks with the p5.js convention of defining the location of graphics at initialization instead of initializing and then translating them to the intended location.
 - Edit names of some functions for clarity and quality of life.
-- Change arguments names and delete unnecessary arguments.
-- Let `getRotate()` rotate a Hex around a Hex that is not the origin.
-- fix origin properties. let origin pixel be based on screen.
-- distance function
+  - maybe a `hexFooBar()` format to easily transition to `triFooBar()` or `sqFooBar()` for other grids.
+- ensure that the naming conventions fits with p5.js
+- Change arguments names, order, and delete unnecessary arguments.
+- creating optimization of functions.
+  - `getRotate()` is a possibility because the state that it is in is a literal mess.
+- implement private functions.
+- ~~Let `getRotate()` rotate a Hex around a Hex that is not the origin.~~
+- ~~No fill when drawing Hexes such that there can be a wireframe grid.~~
+- ~~distance function~~
