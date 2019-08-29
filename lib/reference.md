@@ -17,8 +17,8 @@ This constructor creates a hexagon with the coordinates q, s, and r on the hexag
 There are two orientations for the grid: `pointyOrient` and `flatOrient`. `pointyOrient` is when the hexagons have their vertex pointing up and `flatOrient` is when they have their side pointing up. This is passed into `Layout()` to designate the orientation for the grid.
 ### Layout()
 **Syntax:** `Layout(orientation, size, originPixel)`  
-**Requires:** `size` should be a `Pixel` that has positive values. `originPixel` should be `Hex(0,0,0)`  
-This creates the an invisible grid where you can place you hexes on. `size` represents the radius (It's slightly larger than it should be, this is a fix in progress).
+**Requires:** `size` should be a `Pixel` that has positive integers. `originPixel` should be a `Pixel` that can have postive or negative integers.  
+This creates the an invisible grid where you can place you hexes on at the point `originPixel` relative to your screen. To be specific, the board is drawn at (0,0) and then translated to the location specified at `originPixel`. `size` represents the radius (It's slightly larger than it should be, this is a fix in progress).
 ### generateBoard()
 **Syntax:** `generateBoard(radius, hexes, offset = Hex(0,0,0))`  
 **Requires:** `0 <= radius && hexes = []`  
