@@ -24,6 +24,6 @@
 - Added examples to the readme.
 
 
-## pushdate
+## 8/29/2019
 - Implemented rotation around a non origin hex.
-- Hex grids can now have no fill color. 
+- Hex grids can now have no fill color.
