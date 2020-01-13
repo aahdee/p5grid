@@ -10,9 +10,8 @@ function setup()
   frameRate(30);
   background(25);
   size = Point(45,45);
-  originPixel = Point(0, 0);
-  mainLayout = Layout(pointyOrient, size, originPixel)
-  generateBoard(boardRadius, hexes, Hex(0,0,0));
+  mainLayout = hexLayout(pointyOrient, size);
+  hexGenerateBoard(boardRadius, hexes);
   originHex = Hex(0,0,0);
 }
 
@@ -27,7 +26,7 @@ function draw()
   {
     push();
     scale(Math.cos(frameCount/random(90,100)));
-    drawHex(mainLayout, hexes[i], color(66,0,43,150));
+    hexDraw(mainLayout, hexes[i], color(66,0,43,150));
     pop();
   }
   pop();
