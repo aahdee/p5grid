@@ -3,7 +3,7 @@
 ## 1/13/2019
 - push date
 - naming conventions have changed, so previous code written with past versions will not work with this one.
-- examples are not updated yet. 
+- examples are not updated yet.
 - see changelog for full notes
 - hello those from the p5.js zine!!
 
@@ -55,4 +55,3 @@
 - Added test cases for `isEqualsHex`, `hexAdd`, `hexSub`, `hexMult`, `getDiagonal`, and `getRotate`.
 - `includesHex` is constant time.
 - `includesHex` and `getHex` args are swapped for consistency.
->>>>>>> Stashed changes

@@ -13,21 +13,6 @@ This represents a pixel on the screen. It works exactly like how you would usual
 **Syntax:** `Hex(q, s, r)`  
 **Requires:** `q + s + r == 0`  
 This constructor creates a hexagon with the coordinates q, s, and r on the hexagonal grid. It is best to decided what q and r is and then calculate s as -q-r.
-<<<<<<< Updated upstream
-### Orientation
-There are two orientations for the grid: `pointyOrient` and `flatOrient`. `pointyOrient` is when the hexagons have their vertex pointing up and `flatOrient` is when they have their side pointing up. This is passed into `Layout()` to designate the orientation for the grid.
-### Layout()
-**Syntax:** `Layout(orientation, size, originPixel)`  
-**Requires:** `size` should be a `Pixel` that has positive values. `originPixel` should be `Hex(0,0,0)`  
-This creates the an invisible grid where you can place you hexes on. `size` represents the radius (It's slightly larger than it should be, this is a fix in progress).
-### generateBoard()
-**Syntax:** `generateBoard(radius, hexes, offset = Hex(0,0,0))`  
-**Requires:** `0 <= radius && hexes = []`  
-As it implies, this function generates a board with a radius of `radius` and puts the result into the `hexes` array. The center of the board is at the origin hexagon, (0,0,0), by default but it can be changed by adding the optional parameter `offset`. Should be called in `setup()`
-### drawHexes() and drawHexesArray()
-**Syntax:** `drawHexes(layout, hex, color)`, `drawHexesArray(layout, hexes, color)`  
-This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish. The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
-=======
 ### hexOrientation
 There are two orientations for the grid: `pointyOrient` and `flatOrient`. `pointyOrient` is when the hexagons have their vertex pointing up and `flatOrient` is when they have their side pointing up. This is passed into `hexLayout()` to designate the orientation for the grid.
 ### hexLayout()
@@ -42,7 +27,7 @@ As it implies, this function generates a board with a radius of `radius` and put
 ### hexDraw() and hexDrawArray()
 **Syntax:** `hexDraw(layout, hex, color)`, `hexDrawArray(layout, hexes, color)`  
 This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish and if you would like no fill, enter the string `"NOFILL"` The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
->>>>>>> Stashed changes
+
 
 With these you can easily generate a grid in `setup()` and `draw()`. The example used in `hexTest.js` is below.
 
@@ -95,12 +80,12 @@ Returns true if the two arguments share the same coordinates.
 ### includesHex()
 **Syntax:** `includesHex(Hex, radius)`  
 **Requires:** `radius = boardRadius`  
-Returns true if the given hexagon is in the board. 
+Returns true if the given hexagon is in the board.
 
 ### hexInRadius()
 **Syntax:** `hexInRadius(Hex, ctr, radius)`
 **Requires:** `0 <= radius`  
-Returns true if the given hexagon is in the area defined by hexagon `ctr` and `radius`. I understand that this can easily be folded into the previous function, but that can only happen if I modify the foundation which can be a pain. 
+Returns true if the given hexagon is in the area defined by hexagon `ctr` and `radius`. I understand that this can easily be folded into the previous function, but that can only happen if I modify the foundation which can be a pain.
 
 ### hexAdd()
 **Syntax:** `hexAdd(Hex, Hex)`  
@@ -128,26 +113,21 @@ Returns the Hex whose vertex shares an edge with a passed in Hex's vertex.
 **Requires:** `0 <= radius`  
 Returns an array of Hexes that are a distance of radius away from the passed in Hex.
 
-<<<<<<< Updated upstream
-### getRotate()
-**Syntax:** `getRotate(Hex, rotateNum = 1)`  
-**Requires:** `0 <= rotateNum && rotateNum < 6`
-=======
 ### hexGetRotate()
 **Syntax:** `hexGetRotate(Hex, rotateNum = 1, origin = Hex(0,0,0))`  
 **Requires:** `0 <= rotateNum && rotateNum < 6`  
->>>>>>> Stashed changes
+
 Returns the clockwise rotation around the origin of the passed in Hex. The argument `rotateNum` is in multiples of 60 degrees.
 
 ### hexArea()
 **Syntax:** `hexArea(Hex, radius, layout)`  
 **Requires:** `0 <= radius`  
-Returns an array of all hexagons within a given radius of a given hexagon. `layout` is the layout parameters of the board. 
+Returns an array of all hexagons within a given radius of a given hexagon. `layout` is the layout parameters of the board.
 
 ### hexOverlap()
 **Syntax:** `hexGetRotate(HexA, HexB, radiusA, radiusB, ctr, boardRadius)`  
 **Requires:** `0 <= radiusA && 0 <= radiusB && 0 <= boardRadius`  
-Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. Arguments `ctr` is the center of the board and `boardRadius` is the radius of the board. 
+Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. Arguments `ctr` is the center of the board and `boardRadius` is the radius of the board.
 
 ### hexDebugGrid()
 **Syntax:** `hexDebugGrid(hexes, layout)`  

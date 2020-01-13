@@ -1,14 +1,4 @@
 # To-do
-<<<<<<< Updated upstream
-- Implementation of transformation of the entire grid and scaling.
-- No fill when drawing Hexes such that there can be a wireframe grid.
-- Remove originPixel for the transition to `push()` and `pop()` feature
-- Edit names of some functions for clarity and quality of life.
-- Change arguments names and delete unnecessary arguments.
-- Let `getRotate()` rotate a Hex around a Hex that is not the origin.
-- fix origin properties. let origin pixel be based on screen.
-- distance function
-=======
 
 ## hexgrid.js
 - Implementation of transformation of the entire grid and scaling into a function.
@@ -43,4 +33,3 @@
 - ~~`hexInRadius()` and `includesHex()` are v similar and can be merged.~~
   - ~~params of the board returned by `hexLayout()` (which technically returns a object so it should be `HexLayout()`) so that can be of assistance.~~
   - I wont merge, but instead `includesHex()` will most likely be hidden.  
->>>>>>> Stashed changes
