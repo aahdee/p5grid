@@ -1,6 +1,7 @@
 # To-do
 
 ## hexgrid.js
+
 - Implementation of transformation of the entire grid and scaling into a function.
 - It's odd that I defined the color of a hex as a parameter in `hexDraw` but defined the stroke outside of the function
 
@@ -19,9 +20,10 @@
       - ~~A possible solution is to not call `push` and `pop` in hexDraw, but have the user call it outside of the function.~~ Doesn't work, because order matters. If translate its in the draw function, then I can't put it last because rotations are not centered, but I can't put it first because the transformations don't apply.
   - It seems to be the easiest to have it such that the translation to the specified origin is done by user because of the aforementioned reasons. `originPixel` will be removed from the implementation in favor of p5's translate.
 - error handler?
-
+- skew grid
 
 # Completed
+
 - ~~Let `getRotate()` rotate a Hex around a Hex that is not the origin.~~
 - ~~No fill when drawing Hexes such that there can be a wireframe grid.~~
 - ~~distance function~~
@@ -33,4 +35,4 @@
     - ~~the reference~~
 - ~~`hexInRadius()` and `includesHex()` are v similar and can be merged.~~
   - ~~params of the board returned by `hexLayout()` (which technically returns a object so it should be `HexLayout()`) so that can be of assistance.~~
-  - I wont merge, but instead `includesHex()` will most likely be hidden.  
+  - I wont merge, but instead `includesHex()` will most likely be hidden.

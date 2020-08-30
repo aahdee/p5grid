@@ -11,6 +11,7 @@ function setup() {
   mainLayout = hexLayout(pointyOrient, size, originPixel);
   hexGenerateBoard(boardRadius, hexes, Hex(0, 0, 0));
   originHex = Hex(0, 0, 0);
+  noLoop();
 }
 
 function draw() {
@@ -31,19 +32,21 @@ function testFuncAll() {
   //testBasics();
   //testHexArit();
   //testDiag();
-  testRotate();
-  //testHexArea();
+  //testRotate();
+  testHexArea();
   //testHexOverlap();
 }
 
 function testBasics() {
   //isHex
   console.assert(isHex(Hex(0, 0, 0)), true, "fail of isHex on origin case");
-  console.assert(
-    isHex(Hex(1, 1, 1)),
-    false,
-    "fail of isHex on q + r + s = 0. supposed to be false"
-  );
+
+  try {
+    isHex(Hex(1, 1, 1));
+  } catch (error) {
+    print("passed catching bad hex");
+  }
+
   console.assert(
     isHex(Hex(1, -1, 0)),
     true,
@@ -54,11 +57,11 @@ function testBasics() {
     true,
     "fail of isHex on q + r + s = 0. supposed to be true"
   );
-  console.assert(
-    isHex(Hex(-25, 25, -50)),
-    false,
-    "fail of isHex on q + r + s = 0. supposed to be false"
-  );
+  try {
+    isHex(Hex(-25, 25, -50));
+  } catch (error) {
+    print("passed catching bad hex");
+  }
 
   //is equals Hex
   console.assert(
@@ -133,15 +136,15 @@ function testHexArit() {
 
 function testDiag() {
   //hexs are in a graident to show that it is clockwise
-  hexDraw(mainLayout, originHex, "#19053A");
+  hexDraw(mainLayout, Hex(1, 0, -1), "#19053A");
   for (var i = 0; i < 6; i++) {
-    var diag = hexGetDiagonal(originHex, i);
+    var diag = hexGetDiagonal(Hex(1, 0, -1), i);
     hexDraw(mainLayout, diag, 42.5 * i);
   }
 }
 function testRotate() {
-  var hexA = Hex(1, 1, -2);
-  var hexB = hexGetRotate(hexA);
+  let hexA = Hex(1, 1, -2);
+  let hexB = hexGetRotate(hexA);
   console.assert(hexIsEquals(hexB, Hex(2, -1, -1)));
   hexDraw(mainLayout, hexA, 255);
   hexDraw(mainLayout, hexB, 190);
@@ -214,10 +217,11 @@ function testRotate() {
 
 function testHexArea() {
   //a visual test.
-  var hex = Hex(0, -1, 1);
-  var radius = 2;
-  var res = hexArea(hex, radius, boardRadius);
-  hexDrawArray(mainLayout, res, 0);
+  let hex = Hex(0, -4, 4);
+  let radius = 3;
+  let res = hexArea(hex, radius, boardRadius);
+  print(res);
+  hexDrawArray(mainLayout, res, 255);
 }
 
 function testHexOverlap() {
