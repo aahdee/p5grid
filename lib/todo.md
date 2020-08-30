@@ -18,6 +18,7 @@
     - There was an attempt. Issues came with calling transformations on the grid because (0,0) was at the top left when they were called. Considering writing special transformation functions for grid, but that will probably add too much burden the user.
       - ~~A possible solution is to not call `push` and `pop` in hexDraw, but have the user call it outside of the function.~~ Doesn't work, because order matters. If translate its in the draw function, then I can't put it last because rotations are not centered, but I can't put it first because the transformations don't apply.
   - It seems to be the easiest to have it such that the translation to the specified origin is done by user because of the aforementioned reasons. `originPixel` will be removed from the implementation in favor of p5's translate.
+- error handler?
 
 
 # Completed
