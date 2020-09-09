@@ -152,9 +152,9 @@ Returns an array of all hexagons within a given radius of a given hexagon. `layo
 
 ### hexOverlap()
 
-**Syntax:** `hexGetRotate(HexA, HexB, radiusA, radiusB, ctr, boardRadius)`  
+**Syntax:** `hexOverlap(HexA, HexB, radiusA, radiusB, boardRadius)`  
 **Requires:** `0 <= radiusA && 0 <= radiusB && 0 <= boardRadius`  
-Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. Arguments `ctr` is the center of the board and `boardRadius` is the radius of the board.
+Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. `boardRadius` is the radius of the board.
 
 ### hexDebugGrid()
 

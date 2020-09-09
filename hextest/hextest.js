@@ -34,8 +34,8 @@ function testFuncAll() {
   //testHexArit();
   //testDiag();
   //testRotate();
-  testHexArea();
-  //testHexOverlap();
+  //testHexArea();
+  testHexOverlap();
 }
 
 function testBasics() {
@@ -270,7 +270,7 @@ function testHexOverlap() {
   fill(255);
   hexDrawArray(mainLayout, res);
 
-  var res = hexOverlap(hexA, hexB, radA, radB, originHex, boardRadius);
+  var res = hexOverlap(hexA, hexB, radA, radB, boardRadius);
   fill(100);
   hexDrawArray(mainLayout, res);
 }

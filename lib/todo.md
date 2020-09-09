@@ -3,7 +3,6 @@
 ## hexgrid.js
 
 - Implementation of transformation of the entire grid and scaling into a function.
-- ~~It's odd that I defined the color of a hex as a parameter in `hexDraw` but defined the stroke outside of the function~~ took the color parameter off of `hexDraw` and `hexDrawArray`
 
 - Ensure that the naming conventions fits with p5.js
 - Change arguments names, order, and delete unnecessary arguments.
@@ -36,3 +35,4 @@
 - ~~`hexInRadius()` and `includesHex()` are v similar and can be merged.~~
   - ~~params of the board returned by `hexLayout()` (which technically returns a object so it should be `HexLayout()`) so that can be of assistance.~~
   - I wont merge, but instead `includesHex()` will most likely be hidden.
+- ~~It's odd that I defined the color of a hex as a parameter in `hexDraw` but defined the stroke outside of the function~~ took the color parameter off of `hexDraw` and `hexDrawArray`
