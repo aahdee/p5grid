@@ -4,6 +4,7 @@
 
 - i'm back
 - removed color param in `hexDraw` and `hexDrawArray`
+  - changed examples accordingly
 
 ## 1/13/2020
 
