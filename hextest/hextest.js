@@ -35,7 +35,7 @@ function testFuncAll() {
   //testDiag();
   //testRotate();
   //testHexArea();
-  testHexOverlap();
+  //testHexOverlap();
 }
 
 function testBasics() {
