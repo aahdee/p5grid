@@ -38,8 +38,8 @@ As it implies, this function generates a board with a radius of `radius` and put
 
 ### hexDraw() and hexDrawArray()
 
-**Syntax:** `hexDraw(layout, hex, color)`, `hexDrawArray(layout, hexes, color)`  
-This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish and if you would like no fill, enter the string `"NOFILL"` The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
+**Syntax:** `hexDraw(layout, hex)`, `hexDrawArray(layout, hexes)`  
+This draws a singular hexagon or an array of hexagons onto the screen. The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
 
 With these you can easily generate a grid in `setup()` and `draw()`. The example used in `hexTest.js` is below.
 

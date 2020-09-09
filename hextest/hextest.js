@@ -20,7 +20,8 @@ function draw() {
   fill(100);
   push();
   translate(width / 2, height / 2);
-  hexDrawArray(mainLayout, hexes, "#BE73B2");
+  fill("#BE73B2");
+  hexDrawArray(mainLayout, hexes);
   hexDebugGrid(mainLayout, hexes);
   testFuncAll();
   pop();
@@ -93,22 +94,30 @@ function testBasics() {
 
 function testHexArit() {
   //visual example
-  hexDraw(mainLayout, Hex(2, -1, -1), 0);
-  hexDraw(mainLayout, Hex(2, -3, 1), 40);
+  fill(0);
+  hexDraw(mainLayout, Hex(2, -1, -1));
+  fill(40);
+  hexDraw(mainLayout, Hex(2, -3, 1));
   var res = hexAdd(Hex(2, -1, -1), Hex(2, -3, 1));
   console.assert(hexIsEquals(res, Hex(4, -4, 0)));
-  hexDraw(mainLayout, res, 80);
+  fill(80);
+  hexDraw(mainLayout, res);
 
-  hexDraw(mainLayout, Hex(-1, -1, 2), 150);
-  hexDraw(mainLayout, Hex(-2, 3, -1), 190);
+  fill(150);
+  hexDraw(mainLayout, Hex(-1, -1, 2));
+  fill(190);
+  hexDraw(mainLayout, Hex(-2, 3, -1));
   res = hexSub(Hex(-1, -1, 2), Hex(-2, 3, -1));
   console.assert(hexIsEquals(res, Hex(1, -4, 3)));
-  hexDraw(mainLayout, res, 230);
+  fill(230);
+  hexDraw(mainLayout, res);
 
-  hexDraw(mainLayout, Hex(-2, 1, 1), "rgb(100,0,0)");
+  fill("rgb(100,0,0)");
+  hexDraw(mainLayout, Hex(-2, 1, 1));
   res = hexMult(Hex(-2, 1, 1), 2);
   console.assert(hexIsEquals(res, Hex(-4, 2, 2)));
-  hexDraw(mainLayout, res, "rgb(100,100,0)");
+  fill("rgb(100,100,0)");
+  hexDraw(mainLayout, res);
 
   //more tests
   res = hexAdd(Hex(2, -1, -1), Hex(2, -3, 1));
@@ -136,37 +145,47 @@ function testHexArit() {
 
 function testDiag() {
   //hexs are in a graident to show that it is clockwise
-  hexDraw(mainLayout, Hex(1, 0, -1), "#19053A");
+  fill("#19053A");
+  hexDraw(mainLayout, Hex(1, 0, -1));
   for (var i = 0; i < 6; i++) {
     var diag = hexGetDiagonal(Hex(1, 0, -1), i);
-    hexDraw(mainLayout, diag, 42.5 * i);
+    fill(42.5 * i);
+    hexDraw(mainLayout, diag);
   }
 }
 function testRotate() {
   let hexA = Hex(1, 1, -2);
   let hexB = hexGetRotate(hexA);
   console.assert(hexIsEquals(hexB, Hex(2, -1, -1)));
-  hexDraw(mainLayout, hexA, 255);
-  hexDraw(mainLayout, hexB, 190);
+  fill(255);
+  hexDraw(mainLayout, hexA);
+  fill(190);
+  hexDraw(mainLayout, hexB);
 
   //clockwise rotation
   let clockwise = () => {
     hexA = Hex(-1, 3, -2);
     hexB = hexGetRotate(hexA, 60);
     console.assert(hexIsEquals(hexB, Hex(2, 1, -3)));
+    fill(0);
     hexDraw(mainLayout, hexA, 0);
+    fill(42.5);
     hexDraw(mainLayout, hexB, 42.5);
     hexB = hexGetRotate(hexA, 120);
     console.assert(hexIsEquals(hexB, Hex(3, -2, -1)));
+    fill(85);
     hexDraw(mainLayout, hexB, 85);
     hexB = hexGetRotate(hexA, 180);
     console.assert(hexIsEquals(hexB, Hex(1, -3, 2)));
+    fill(127.5);
     hexDraw(mainLayout, hexB, 127.5);
     hexB = hexGetRotate(hexA, 240);
     console.assert(hexIsEquals(hexB, Hex(-2, -1, 3)));
+    fill(170);
     hexDraw(mainLayout, hexB, 170);
     hexB = hexGetRotate(hexA, 300);
     console.assert(hexIsEquals(hexB, Hex(-3, 2, 1)));
+    fill(212.5);
     hexDraw(mainLayout, hexB, 212.5);
   };
 
@@ -175,19 +194,25 @@ function testRotate() {
     hexA = Hex(1, 3, -4);
     hexB = hexGetRotate(hexA, -60);
     console.assert(hexIsEquals(hexB, Hex(4, -1, -3)));
+    fill("rgb(100,0,0)");
     hexDraw(mainLayout, hexA, "rgb(100,0,0)");
+    fill("rgb(100,0,42)");
     hexDraw(mainLayout, hexB, "rgb(100,0,42)");
     hexB = hexGetRotate(hexA, -120);
     console.assert(hexIsEquals(hexB, Hex(3, -4, 1)));
+    fill("rgb(100,0,85)");
     hexDraw(mainLayout, hexB, "rgb(100,0,85)");
     hexB = hexGetRotate(hexA, -180);
     console.assert(hexIsEquals(hexB, Hex(-1, -3, 4)));
+    fill("rgb(100,0,127)");
     hexDraw(mainLayout, hexB, "rgb(100,0,127)");
     hexB = hexGetRotate(hexA, -240);
     console.assert(hexIsEquals(hexB, Hex(-4, 1, 3)));
+    fill("rgb(100,0,170)");
     hexDraw(mainLayout, hexB, "rgb(100,0,170)");
     hexB = hexGetRotate(hexA, -300);
     console.assert(hexIsEquals(hexB, Hex(-3, 4, -1)));
+    fill("rgb(100,0,212)");
     hexDraw(mainLayout, hexB, "rgb(100,0,212)");
   };
   //greator than 360 angle
@@ -195,19 +220,25 @@ function testRotate() {
     hexA = Hex(-1, 3, -2);
     hexB = hexGetRotate(hexA, 420);
     console.assert(hexIsEquals(hexB, Hex(2, 1, -3)));
+    fill(0);
     hexDraw(mainLayout, hexA, 0);
+    fill(125);
     hexDraw(mainLayout, hexB, 125);
     hexB = hexGetRotate(hexA, 480);
     console.assert(hexIsEquals(hexB, Hex(3, -2, -1)));
+    fill(255);
     hexDraw(mainLayout, hexB, 255);
     hexB = hexGetRotate(hexA, 540);
     console.assert(hexIsEquals(hexB, Hex(1, -3, 2)));
+    fill(0);
     hexDraw(mainLayout, hexB, 0);
     hexB = hexGetRotate(hexA, 600);
     console.assert(hexIsEquals(hexB, Hex(-2, -1, 3)));
+    fill(125);
     hexDraw(mainLayout, hexB, 125);
     hexB = hexGetRotate(hexA, 660);
     console.assert(hexIsEquals(hexB, Hex(-3, 2, 1)));
+    fill(255);
     hexDraw(mainLayout, hexB, 255);
   };
   //clockwise();
@@ -221,7 +252,8 @@ function testHexArea() {
   let radius = 3;
   let res = hexArea(hex, radius, boardRadius);
   print(res);
-  hexDrawArray(mainLayout, res, 255);
+  fill(255);
+  hexDrawArray(mainLayout, res);
 }
 
 function testHexOverlap() {
@@ -232,10 +264,13 @@ function testHexOverlap() {
   var radB = 4;
 
   var res = hexArea(hexA, radA, boardRadius);
-  hexDrawArray(mainLayout, res, 0);
+  fill(0);
+  hexDrawArray(mainLayout, res);
   var res = hexArea(hexB, radB, boardRadius);
-  hexDrawArray(mainLayout, res, 255);
+  fill(255);
+  hexDrawArray(mainLayout, res);
 
   var res = hexOverlap(hexA, hexB, radA, radB, originHex, boardRadius);
-  hexDrawArray(mainLayout, res, 100);
+  fill(100);
+  hexDrawArray(mainLayout, res);
 }

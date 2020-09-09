@@ -3,7 +3,7 @@
 ## hexgrid.js
 
 - Implementation of transformation of the entire grid and scaling into a function.
-- It's odd that I defined the color of a hex as a parameter in `hexDraw` but defined the stroke outside of the function
+- ~~It's odd that I defined the color of a hex as a parameter in `hexDraw` but defined the stroke outside of the function~~ took the color parameter off of `hexDraw` and `hexDrawArray`
 
 - Ensure that the naming conventions fits with p5.js
 - Change arguments names, order, and delete unnecessary arguments.
