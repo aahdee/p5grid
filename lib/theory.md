@@ -3,7 +3,8 @@
 ## Tiling Theory
 
 - There are two possible orientations for the grid, Horizontal (H) and Vertical (V). In Horizontal, an axis is horizontal. In Vertical, an axis is Vertical. They are 30 degree rotations from each other.
-- Origin triangle on H will have a point facing north. Origin triangle on V will have a point facing right
+- Origin triangle on H will have a point facing north. Origin triangle on V will have a point facing east.
+  - Could have a south and west orientation, but at that point the grid could be rotated 180 degrees. Deliberating on that fact.
 - For each grid orientation, there are two possible orientations for each triangle. The origin will have one of these triangle orientations.
 - All triangles that have the same orientation as the origin triangle has coordinates that are even. Else, odd.
 - Checksum is the sum of all of the coordinates.
