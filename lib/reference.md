@@ -55,7 +55,7 @@ With these you can easily generate a grid in `setup()` and `draw()`. The example
       background(50);
       size = Point(10, 10);
       originPixel = Point(0, 0);
-      mainLayout = hexLayout(pointyOrient, size, originPixel)
+      mainLayout = hexLayout(pointyOrient, size)
       hexGenerateBoard(boardRadius, hexes, Hex(0,0,0));
     }
 
