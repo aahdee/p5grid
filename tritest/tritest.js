@@ -10,6 +10,7 @@ function setup() {
   originPixel = Point(0, 0);
   mainLayout = triLayout(verticalOrient, size);
   triGenerateBoard(boardRadius, tris);
+  noLoop();
 }
 
 function draw() {
@@ -18,5 +19,6 @@ function draw() {
   push();
   translate(width / 2, height / 2);
   triDrawArray(mainLayout, tris, "#BE73B2");
+  triDebugGrid(mainLayout, tris);
   pop();
 }
