@@ -38,8 +38,8 @@ As it implies, this function generates a board with a radius of `radius` and put
 
 ### hexDraw() and hexDrawArray()
 
-**Syntax:** `hexDraw(layout, hex, color)`, `hexDrawArray(layout, hexes, color)`  
-This draws a singular hexagon or an array of hexagons onto the screen. Color can be in any format you wish and if you would like no fill, enter the string `"NOFILL"` The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
+**Syntax:** `hexDraw(layout, hex)`, `hexDrawArray(layout, hexes)`  
+This draws a singular hexagon or an array of hexagons onto the screen. The grid is drawn with its center at `Point(0,0)`, so its advised to use transformations to place it where you wish.
 
 With these you can easily generate a grid in `setup()` and `draw()`. The example used in `hexTest.js` is below.
 
@@ -152,9 +152,9 @@ Returns an array of all hexagons within a given radius of a given hexagon. `layo
 
 ### hexOverlap()
 
-**Syntax:** `hexGetRotate(HexA, HexB, radiusA, radiusB, ctr, boardRadius)`  
+**Syntax:** `hexOverlap(HexA, HexB, radiusA, radiusB, boardRadius)`  
 **Requires:** `0 <= radiusA && 0 <= radiusB && 0 <= boardRadius`  
-Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. Arguments `ctr` is the center of the board and `boardRadius` is the radius of the board.
+Returns an array of the intersection between two areas where one area has a center of `HexA` and a radius of `radiusA` and the other area has a center of `HexB` and a radius of `radiusB`. `boardRadius` is the radius of the board.
 
 ### hexDebugGrid()
 
