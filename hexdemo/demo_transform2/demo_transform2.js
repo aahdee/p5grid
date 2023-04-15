@@ -10,8 +10,8 @@ function setup()
   background(25);
   size = Point(30,30);
   originPixel = Point(0, 0);
-  mainLayout = Layout(pointyOrient, size, originPixel)
-  generateBoard(boardRadius, hexes, Hex(0,0,0));
+  mainLayout = hexLayout(pointyOrient, size, originPixel)
+  hexGenerateBoard(boardRadius, hexes, Hex(0,0,0));
   originHex = Hex(0,0,0);
 }
 
@@ -26,7 +26,8 @@ function draw()
   for (var i = 0; i < hexes.length; i++)
   {
     scale(Math.sin(frameCount/60));
-    drawHex(mainLayout, hexes[i], '#42002B');
+    fill("#42002B")
+    hexDraw(mainLayout, hexes[i]);
   }
   pop();
 }

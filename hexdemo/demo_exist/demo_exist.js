@@ -22,7 +22,8 @@ function draw()
   background(50);
   push();
   translate(width/2, height/2);
-  hexDrawArray(mainLayout, hexes, '#42002B');
+  fill("#42002b")
+  hexDrawArray(mainLayout, hexes);
   pop();
 }
 

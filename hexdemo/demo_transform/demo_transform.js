@@ -22,6 +22,7 @@ function draw()
   translate(width/2, height/2);
   rotate(Math.sin(frameCount/30));
   scale(Math.cos(frameCount/60));
-  hexDrawArray(mainLayout, hexes, '#6F6A22');
+  fill("#6F6A22")
+  hexDrawArray(mainLayout, hexes);
   pop();
 }
