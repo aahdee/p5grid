@@ -1,4 +1,4 @@
-var boardRadius1 = 3;
+var boardRadius1 = 8;
 var boardRadius2 = 4;
 var size;
 var originHex;
@@ -11,9 +11,9 @@ var layout2;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("#313975");
-  size = Point(40, 40);
+  size = Point(20, 20 );
   mainLayout = hexLayout(pointyOrient, size);
-  layout2 = hexLayout(pointyOrient, Point(75, 75));
+  layout2 = hexLayout(pointyOrient, Point(50, 75));
   hexGenerateBoard(boardRadius1, hexes1);
   hexGenerateBoard(boardRadius2, hexes2);
   hexGenerateBoard(boardRadius2, hexes3);
