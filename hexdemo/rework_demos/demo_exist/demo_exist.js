@@ -1,4 +1,4 @@
-var boardRadius = 5;
+var boardRadius = 4;
 var hSize = hexSize(30,30);
 
 function setup()
@@ -12,10 +12,10 @@ function setup()
 function draw()
 {
   stroke('#A45287');
-  //background(50);
+  background(50);
   push();
   translate(width/2, height/2);
-  noFill();
+  fill("#42002b");
   grid1.drawBoard();
   pop();
 }
