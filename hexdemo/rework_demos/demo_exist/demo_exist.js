@@ -1,4 +1,4 @@
-var boardRadius = 4;
+var boardRadius = 2;
 var hSize = hexSize(30,30);
 
 function setup()
@@ -17,6 +17,17 @@ function draw()
   translate(width/2, height/2);
   fill("#42002b");
   grid1.drawBoard();
+  let h = grid1.hexes[14]
+  fill('red')
+  grid1.drawHex(h)
+  let ring = h.getRing(grid1,3)
+  fill("blue")
+  for (let i = 0; i < ring.length; i++){
+    grid1.drawHex(ring[i])
+  }
+  let center = grid1.getOriginHex()
+  fill("purple")
+  grid1.drawHex(center)
   pop();
 }
 
