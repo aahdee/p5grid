@@ -17,9 +17,9 @@ function draw() {
     fill("#BE73B2");
     grid1.drawBoard();
     fill("red");
-    grid1.drawHex(new Hex(0, 0, 0));
+    grid1.drawHex(new Hex(-2, 0, 2));
     fill("blue");
-    grid1.drawHex(new Hex(0, 0, 0).getDiagonal(2));
+    grid1.drawHex(new Hex(-2, 0, 2).rotate(120));
     pop();
     //hexDraw(mainLayout, originHex, 0);
 }
