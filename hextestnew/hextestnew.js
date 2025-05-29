@@ -19,7 +19,13 @@ function draw() {
     fill("red");
     grid1.drawHex(new Hex(-2, 0, 2));
     fill("blue");
-    grid1.drawHex(new Hex(-2, 0, 2).rotate(120));
+    let area = new Hex(-4, 0, 4).getArea(2);
+    console.log(area[0]);
+    for (h of area) {
+        console.log(h);
+        grid1.drawHex(h);
+    }
+
     pop();
     //hexDraw(mainLayout, originHex, 0);
 }
