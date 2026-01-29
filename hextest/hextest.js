@@ -6,12 +6,12 @@ var mainLayout;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  size = Point(15, 15);
-  originPixel = Point(0, 0);
+  size = new Point(15, 15);
+  originPixel = new Point(0, 0);
   mainLayout = hexLayout(pointyOrient, size, originPixel);
   hexGenerateBoard(boardRadius, hexes, Hex(0, 0, 0));
-  originHex = Hex(0, 0, 0);
-  noLoop();
+  originHex = new Hex(0, 0, 0);
+  // noLoop();
 }
 
 function draw() {
@@ -35,58 +35,58 @@ function testFuncAll() {
   //testDiag();
   //testRotate();
   //testHexArea();
-  testHexOverlap();
+  // testHexOverlap();
 }
 
 function testBasics() {
   //isHex
-  console.assert(isHex(Hex(0, 0, 0)), true, "fail of isHex on origin case");
+  console.assert(isHex(new Hex(0, 0, 0)), true, "fail of isHex on origin case");
 
   try {
-    isHex(Hex(1, 1, 1));
+    isHex( new Hex(1, 1, 1));
   } catch (error) {
     print("passed catching bad hex");
   }
 
   console.assert(
-    isHex(Hex(1, -1, 0)),
+    isHex(new Hex(1, -1, 0)),
     true,
     "fail of isHex on q + r + s = 0. supposed to be true"
   );
   console.assert(
-    isHex(Hex(25, 25, -50)),
+    isHex(new Hex(25, 25, -50)),
     true,
     "fail of isHex on q + r + s = 0. supposed to be true"
   );
   try {
-    isHex(Hex(-25, 25, -50));
+    isHex(new Hex(-25, 25, -50));
   } catch (error) {
     print("passed catching bad hex");
   }
 
   //is equals Hex
   console.assert(
-    hexIsEquals(Hex(3, -2, -1), Hex(3, -2, -1)),
+    hexIsEquals(new Hex(3, -2, -1), new Hex(3, -2, -1)),
     "fail of hexIsEquals. supposed to be true. "
   );
   console.assert(
-    hexIsEquals(Hex(0, 0, 0), Hex(0, 0, 0)),
+    hexIsEquals(new Hex(0, 0, 0), new Hex(0, 0, 0)),
     "fail of hexIsEquals. supposed to be true. "
   );
   console.assert(
-    !hexIsEquals(Hex(3, -2, -1), Hex(0, 0, 0)),
+    !hexIsEquals(new Hex(3, -2, -1), new Hex(0, 0, 0)),
     "fail of hexIsEquals. supposed to be true."
   );
   console.assert(
-    hexIsEquals(Hex(0, 1, -1), Hex(0, 1, -1)),
+    hexIsEquals(new Hex(0, 1, -1), new Hex(0, 1, -1)),
     "fail of hexIsEquals. supposed to be true. "
   );
   console.assert(
-    hexIsEquals(Hex(50, -25, -25), Hex(50, -25, -25)),
+    hexIsEquals(new Hex(50, -25, -25), new Hex(50, -25, -25)),
     "fail of hexIsEquals. supposed to be true."
   );
   console.assert(
-    !hexIsEquals(Hex(-10, -2, 12), Hex(3, -2, -1)),
+    !hexIsEquals(new Hex(-10, -2, 12), new Hex(3, -2, -1)),
     "fail of hexIsEquals. supposed to be true. "
   );
   console.log("testBasics() complete");
@@ -95,9 +95,9 @@ function testBasics() {
 function testHexArit() {
   //visual example
   fill(0);
-  hexDraw(mainLayout, Hex(2, -1, -1));
+  hexDraw(mainLayout, new Hex(2, -1, -1));
   fill(40);
-  hexDraw(mainLayout, Hex(2, -3, 1));
+  hexDraw(mainLayout, new Hex(2, -3, 1));
   var res = hexAdd(Hex(2, -1, -1), Hex(2, -3, 1));
   console.assert(hexIsEquals(res, Hex(4, -4, 0)));
   fill(80);

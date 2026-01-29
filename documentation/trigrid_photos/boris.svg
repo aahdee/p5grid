@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="103.66172mm"
+   height="89.094574mm"
+   viewBox="0 0 103.66172 89.094574"
+   version="1.1"
+   id="svg1139"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="tri_grid.svg">
+  <defs
+     id="defs1133" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-28.786512"
+     inkscape:cy="274.90966"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1755"
+     inkscape:window-height="1228"
+     inkscape:window-x="2994"
+     inkscape:window-y="114"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1136">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-58.296796,-135.32575)">
+    <g
+       id="g2006"
+       transform="matrix(1.0530513,0,0,1.0522458,68.827309,145.84821)">
+      <polygon
+         points="-4,0 -2,0 -3,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon2"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="9.9386234"
+         y="46.48"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text10"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan4">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan6">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan8">2</tspan></text>
+      <polygon
+         points="-3,1.7320508 -5,1.7320508 -4,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon12"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="0.23279303"
+         y="52.083664"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text20"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan14">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan16">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan18">3</tspan></text>
+      <polygon
+         points="-3,-1.7320508 -1,-1.7320508 -2,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon22"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="19.644455"
+         y="29.669006"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text30"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan24">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan26">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan28">1</tspan></text>
+      <polygon
+         points="-2,0 -4,0 -3,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon32"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="9.9386234"
+         y="35.272671"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text40"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan34">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan36">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan38">2</tspan></text>
+      <polygon
+         points="-2,-3.4641016 0,-3.4641016 -1,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon42"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="29.350286"
+         y="12.858016"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text50"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan44">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan46">2</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan48">0</tspan></text>
+      <polygon
+         points="-1,-1.7320508 -3,-1.7320508 -2,-3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon52"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="19.644455"
+         y="18.461679"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text60"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan54">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan56">2</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan58">1</tspan></text>
+      <polygon
+         points="0,-3.4641016 -2,-3.4641016 -1,-5.1961524 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon62"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="29.350286"
+         y="1.6506884"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text70"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan64">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan66">3</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan68">0</tspan></text>
+      <polygon
+         points="-3,1.7320508 -1,1.7320508 -2,3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon72"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="19.644455"
+         y="63.290989"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text80"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan74">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan76">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan78">2</tspan></text>
+      <polygon
+         points="-2,3.4641016 -4,3.4641016 -3,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon82"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="9.9386234"
+         y="68.894661"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text90"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan84">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan86">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan88">3</tspan></text>
+      <polygon
+         points="-2,0 0,0 -1,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon92"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="29.350286"
+         y="46.48"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text100"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan94">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan96">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan98">1</tspan></text>
+      <polygon
+         points="-1,1.7320508 -3,1.7320508 -2,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon102"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="19.644455"
+         y="52.083664"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text110"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan104">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan106">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan108">2</tspan></text>
+      <polygon
+         points="-1,-1.7320508 1,-1.7320508 0,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon112"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="39.056118"
+         y="29.669006"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text120"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan114">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan116">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan118">0</tspan></text>
+      <polygon
+         points="0,0 -2,0 -1,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon122"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="29.350286"
+         y="35.272671"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text130"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan124">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan126">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan128">1</tspan></text>
+      <polygon
+         points="0,-3.4641016 2,-3.4641016 1,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon132"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="48.761951"
+         y="12.858016"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text140"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan134">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan136">2</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan138">-1</tspan></text>
+      <polygon
+         points="1,-1.7320508 -1,-1.7320508 0,-3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon142"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="39.056118"
+         y="18.461679"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text150"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan144">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan146">2</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan148">0</tspan></text>
+      <polygon
+         points="2,-3.4641016 0,-3.4641016 1,-5.1961524 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon152"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="48.761951"
+         y="1.6506884"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text160"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan154">0</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan156">3</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan158">-1</tspan></text>
+      <polygon
+         points="-1,1.7320508 1,1.7320508 0,3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon162"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="39.056118"
+         y="63.290989"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text170"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan164">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan166">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan168">1</tspan></text>
+      <polygon
+         points="0,3.4641016 -2,3.4641016 -1,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon172"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="29.350286"
+         y="68.894661"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text180"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan174">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan176">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan178">2</tspan></text>
+      <polygon
+         points="0,0 2,0 1,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon182"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="48.761951"
+         y="46.48"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text190"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan184">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan186">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan188">0</tspan></text>
+      <polygon
+         points="1,1.7320508 -1,1.7320508 0,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon192"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="39.056118"
+         y="52.083664"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text200"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan194">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan196">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan198">1</tspan></text>
+      <polygon
+         points="1,-1.7320508 3,-1.7320508 2,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon202"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="58.467781"
+         y="29.669006"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text210"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan204">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan206">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan208">-1</tspan></text>
+      <polygon
+         points="2,0 0,0 1,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon212"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="48.761951"
+         y="35.272671"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text220"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan214">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan216">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan218">0</tspan></text>
+      <polygon
+         points="3,-1.7320508 1,-1.7320508 2,-3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon222"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="58.467781"
+         y="18.461679"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text230"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan224">1</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan226">2</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan228">-1</tspan></text>
+      <polygon
+         points="1,1.7320508 3,1.7320508 2,3.4641016 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon232"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="58.467781"
+         y="63.290989"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text240"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan234">2</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan236">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan238">0</tspan></text>
+      <polygon
+         points="2,3.4641016 0,3.4641016 1,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon242"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="48.761951"
+         y="68.894661"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text250"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan244">2</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan246">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan248">1</tspan></text>
+      <polygon
+         points="2,0 4,0 3,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon252"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="68.173615"
+         y="46.48"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text260"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan254">2</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan256">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan258">-1</tspan></text>
+      <polygon
+         points="3,1.7320508 1,1.7320508 2,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon262"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="58.467781"
+         y="52.083664"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text270"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan264">2</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan266">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan268">0</tspan></text>
+      <polygon
+         points="4,0 2,0 3,-1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon272"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="68.173615"
+         y="35.272671"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text280"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan274">2</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan276">1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan278">-1</tspan></text>
+      <polygon
+         points="4,3.4641016 2,3.4641016 3,1.7320508 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon282"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="68.173615"
+         y="68.894661"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text290"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan284">3</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan286">-1</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan288">0</tspan></text>
+      <polygon
+         points="5,1.7320508 3,1.7320508 4,0 "
+         style="fill:#f4f4f1;stroke:#333333;stroke-width:0.1;stroke-linejoin:round"
+         id="polygon292"
+         transform="matrix(9.7464805,0,0,9.6653502,39.219691,40.705852)" />
+      <text
+         x="77.87944"
+         y="52.083664"
+         text-anchor="middle"
+         alignment-baseline="middle"
+         style="font-size:2.91175px;fill:#333333;stroke-width:9.70582;stroke-linejoin:round"
+         id="text300"
+         transform="scale(1.0041882,0.99582927)"><tspan
+   style="font-weight:bold;fill:#59b300;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan294">3</tspan>, <tspan
+   style="font-weight:bold;fill:#e619e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan296">0</tspan>, <tspan
+   style="font-weight:bold;fill:#0099e6;stroke-width:9.70582;stroke-linejoin:round"
+   id="tspan298">-1</tspan></text>
+    </g>
+  </g>
+</svg>
