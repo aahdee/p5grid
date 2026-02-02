@@ -18,3 +18,4 @@ My main course of action is to rework my library to fit it with p5.js contributo
 
 I know that I dont have a lot to say -- I am old (twenty seven years) and have had mean RSI/Carpal Tunnel flareups during this frigid January, so typing is an bit of a problem.
 
+[Trigrid Progress](/documentation/trigrid.md)

@@ -22,3 +22,28 @@ Here, you are able to check if a coordinate lies on a valid triangle if the coor
 After this, I came across a research paper titled [A Continuous Coordinate System for the Plane by Triangular Symmetry (Nagy and Abuhmaidan)](https://www.mdpi.com/2073-8994/11/2/191) which defined a vertex origin coordinate system and [Shortest Paths in Triangular Grids with Neighbourhood Sequences (Nagy)](https://www.researchgate.net/publication/47397245_Shortest_Paths_in_Triangular_Grids_with_Neighbourhood_Sequences) which references the same face origin coordinate system that I thought of in lecture. Oh well. 
 
 In my very novice opinion, neither implementation is wrong, but it seems like the vertex origin implemetation has more basis in formal mathematics as most of the implementations I've seen are vertex origin. However, since I wish to make patterns within the cells of the triange grid, I will go forth with the face origin method.  
+
+After creating a class for triangle grids, I am at the state where I can draw all triangles that have are isometric to the origin. 
+
+![](/documentation/trigrid_photos/init-render.png)
+
+One may notice that the rendered grid is different than my mockup because the axis have been flipped. To keep it as close to the hex grids as possible, I revised my mockup to represent the new axis. Now, avalid triangle's coordinate sum must be 0 or -1, instead of 0 or 1. 
+
+![](/documentation/trigrid_photos/attempt3.png)
+
+The anisometric triangles are visible via the negative space. That is not good enough because I want to reference it *directly*.
+
+I spent about two days banging my head to define a transfomation matrix. Very recently, I discovered a trick. 
+
+If one were to overlay the current triangle grid over a hexagon grid of pointed orientation of the same size, one would see this:
+
+![](/documentation/trigrid_photos/init-render-w-hex.png)
+![](/documentation/trigrid_photos/init-render-w-hex-flip.png)
+
+Hark! The origin isometric triangles are inscribed in the hexagones and the centroids of the origin anisometric triangles are the corners of the hexagons. This is a good point to build on. However, the `TriBoard.generateBoard()` is just a copy of `HexBoard().generateBoard()`, so it only generates triangles that have a coordinate sum of 0. Let's do that. 
+
+![](/documentation/trigrid_photos/mess-render.png)
+
+All that is left is to shift them to their proper posistions. At this moment I am *slightly* off, because the current triSize is not a one to one correlation to the hexSize
+
+![](/documentation/trigrid_photos/so-close.png)

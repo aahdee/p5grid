@@ -1,14 +1,17 @@
 let boardRadius = 2;
 let hSize;
+let tSize;
 
 function setup()
 {
   createCanvas(windowWidth, windowHeight);
-  loadCSV();
   hSize = new hexSize(30,30);
+  tSize = new triSize(30,30);
   background(25);
   angleMode(DEGREES);
-  grid1 = new HexBoard(HEXFLATORIENTATION, hSize, boardRadius);
+  grid1 = new HexBoard(HEXPOINTYORIENTATION, hSize, boardRadius);
+  grid2 = new TriBoard(TRIFLATORIENTATION, tSize, boardRadius);
+
 }
 
 function draw()
@@ -19,17 +22,18 @@ function draw()
   translate(width/2, height/2);
   fill("#42002b");
   grid1.drawBoard();
-  let h = grid1.hexes[14]
-  fill('red')
-  grid1.drawHex(h)
-  let ring = h.getRing(grid1,3)
-  fill("blue")
-  for (let i = 0; i < ring.length; i++){
-    grid1.drawHex(ring[i])
-  }
-  let center = grid1.getOriginHex()
-  fill("purple")
-  grid1.drawHex(center)
+  grid2.drawBoardDebug();
+  // let h = grid1.hexes[14]
+  // fill('red')
+  // grid1.drawHex(h)
+  // let ring = h.getRing(grid1,3)
+  // fill("blue")
+  // for (let i = 0; i < ring.length; i++){
+  //   grid1.drawHex(ring[i])
+  // }
+  // let center = grid1.getOriginHex()
+  // fill("purple")
+  // grid1.drawHex(center)
   pop();
 }
 
